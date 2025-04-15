@@ -39,3 +39,4 @@ As a developer working with global clients, it becomes tricky to keep track of t
 
 ### 🙏 Thank You for Your Time!
 
+![ChronoGlobe UI](images/chrono-ui.png)
