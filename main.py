@@ -63,4 +63,11 @@ while True:
             tz = pytz.timezone(tz_name)
             current_time = datetime.now(tz).strftime("%A, %d %B %Y | %I:%M:%S %p")
             st.write(f"**{country}**: {current_time}")
+    
+        # Footer
+        st.markdown("""
+            <div class="footer">
+                 Created by <strong>Aditya Jawanjal</strong> | Version <strong>0.1.0</strong>
+            </div>
+        """, unsafe_allow_html=True)
     time.sleep(1)
