@@ -18,7 +18,16 @@ timezones = {
 st.set_page_config(page_title="🌍 ChronoGloabe -Live World Clock", layout="centered")
 
 
-for country, tz_name in timezones.items():
-    tz = pytz.timezone(tz_name)
-    current_time = datetime.now(tz).strftime("%A, %d %B %Y | %I:%M:%S %p")
-    st.write(f"**{country}**: {current_time}")
+# Placeholder for clock updates
+placeholder = st.empty()
+
+
+# Main clock loop
+while True:
+    with placeholder.container():
+        st.markdown("### 📅 Date and Time by Country")
+        for country, tz_name in timezones.items():
+            tz = pytz.timezone(tz_name)
+            current_time = datetime.now(tz).strftime("%A, %d %B %Y | %I:%M:%S %p")
+            st.write(f"**{country}**: {current_time}")
+    time.sleep(1)
