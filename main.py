@@ -51,6 +51,7 @@ st.markdown("""
     <div class="subtitle">Get current date and time for India, Finland, Estonia, Latvia, and Lithuania</div>
 """, unsafe_allow_html=True)
 
+
 # Placeholder for clock updates
 placeholder = st.empty()
 
@@ -63,7 +64,7 @@ while True:
             tz = pytz.timezone(tz_name)
             current_time = datetime.now(tz).strftime("%A, %d %B %Y | %I:%M:%S %p")
             st.write(f"**{country}**: {current_time}")
-    
+
         # Footer
         st.markdown("""
             <div class="footer">
