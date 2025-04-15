@@ -18,6 +18,39 @@ timezones = {
 st.set_page_config(page_title="🌍 ChronoGloabe -Live World Clock", layout="centered")
 
 
+# Title with HTML + CSS styling
+st.markdown("""
+    <style>
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            bottom: 0;
+            width: 100vw;
+            padding: 10px 0;
+            background-color: #f0f2f6;
+            text-align: center;
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+    </style>
+    <div class="title">🕒 Live World Clock</div>
+    <div class="subtitle">Get current date and time for India, Finland, Estonia, Latvia, and Lithuania</div>
+""", unsafe_allow_html=True)
+
 # Placeholder for clock updates
 placeholder = st.empty()
 
